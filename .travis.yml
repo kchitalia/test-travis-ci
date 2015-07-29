@@ -1,0 +1,5 @@
+language: objective-c
+travis-encrypt ./test_credentials.json
+
+script:
+   - xctool -project test/test.xcodeproj
