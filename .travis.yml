@@ -6,4 +6,4 @@ before_install:
    - ./setup_credentials.sh
 
 script:
-   - xctool -project test/test.xcodeproj -scheme test/test
+   - xctool -project test/test.xcodeproj -scheme test/test -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
