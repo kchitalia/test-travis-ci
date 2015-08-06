@@ -6,4 +6,5 @@ before_install:
    - ./setup_credentials.sh
 
 script:
+   - echo $TRAVIS_BUILD_DIR
    - xctool -project test/test.xcodeproj -scheme test -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
